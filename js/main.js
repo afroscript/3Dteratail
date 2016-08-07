@@ -41,14 +41,14 @@ var far = 10000;
 var camera = new THREE.PerspectiveCamera(fov, aspect, near, far);
 var camera_position_x0 = 0;
 var camera_position_y0 = 0;
-var camera_position_z0 = -800;
+var camera_position_z0 = 800;
 camera.position.set(camera_position_x0,camera_position_y0,camera_position_z0);
 
 
 /*
  * Orbitコントローラを生成
  */
-var controls = new THREE.OrbitControls(camera, renderer.domElement);
+//var controls = new THREE.OrbitControls(camera, renderer.domElement);
 var controls = new THREE.OrbitControls(camera, cssRenderer.domElement);
 
 //////////////////////////////////////////////////////
